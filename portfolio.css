@@ -1,0 +1,95 @@
+.projects {
+    padding: 0 7%;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    justify-content: center;
+}
+
+.projects > h2 {
+    color: var(--sweet);
+    font-size: 70px;
+    margin-left: 100px;
+}
+.projects > p {
+    margin-left: 100px;
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+}
+.projects-con {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.projects-con a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    width: 25%;
+    height: 20rem;
+    margin: 30px;
+    text-align: center;
+    background: var(--bright);
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.projects-con a:hover {
+    transform: translateY(-30px);
+}
+.projects-con .sites img {
+    width: 50px;
+}
+.projects-con .sites p {
+    font-size: 1rem;
+    color: #5a5a5a;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.projects-con .sites h3 {
+    color: var(--background-dark);
+}
+.projects-con .sites .pending {
+    color: var(--bright);
+    padding: 2px 15px;
+    background: var(--greener);
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+/*-----------------------------*\
+Responsive Design
+\*-----------------------------*/
+
+/* Mobile Phones */
+@media only screen and (max-width:600px) {
+    .project {
+        padding: 0 4%;
+    }
+    .projects > h2 {
+        font-size: 2rem;
+        margin-left: 0;
+    }
+    .projects > p {
+        margin-left: 0;
+        font-size: 0.9rem;
+    }
+    .projects-con {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .projects-con a {
+        width: 100%;
+        padding: 30px;
+        height: 20rem;
+        margin: 20px 0;
+    }
+    .projects-con .sites img {
+        width: 30px;
+    }
+    .projects-con .sites p {
+        font-size: 0.9rem;
+    }
+  
+}

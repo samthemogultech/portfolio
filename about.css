@@ -1,0 +1,53 @@
+.about-me-con {
+    display: flex;
+    padding: 200px 7% 50px 7%;
+    justify-content: center;
+}
+.about-me-con > img {
+    width: 700px;
+    margin-right: 50px;
+    transform: translateY(-150px);
+}
+.about-me-con .about-text h2 {
+    color: var(--sweet);
+    font-size: 70px;
+    margin-bottom: 30px;
+}
+.about-me-con .about-text p {
+    font-size: 1.2rem;
+    color: var(--background-dark);
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.about-me-con .about-text p::-webkit-scrollbar {
+    display: none;
+}
+
+/*-----------------------------*\
+Responsive Design
+\*-----------------------------*/
+
+/* Mobile Phones */
+@media only screen and (max-width:600px) {
+    .about-me-con {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    .about-me-con > img {
+        width: 100%;
+        margin-right: 0;
+        transform: translateY(0);
+    }
+    .about-me-con .about-text h2 {
+        font-size: 2rem;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .about-me-con .about-text p {
+        font-size: 0.9rem;
+    }
+  
+}
