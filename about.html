@@ -18,9 +18,9 @@
         <nav>
             <a  href="index.html"><img class="logo" src="assets/samlogo.png" alt="samthemogul logo"></a>
             <ul class="menu-links">
-                <li class="menu-items"><a class="active-nav-link" href="index.html">Home</a></li>
+                <li class="menu-items"><a href="index.html">Home</a></li>
                 <li class="menu-items ports"><a href="portfolio.html">Portfolio</a></li>
-                <li class="menu-items"><a href="about.html">About Me</a></li>
+                <li class="menu-items"><a class="active-nav-link" href="about.html">About Me</a></li>
                 <li class="menu-items"><a href="contact.html">Contact</a></li>
             </ul>
             <a class="btn cv nav-cv" href="assets/Samuel Emeka - Frontend Developer.pdf">Download CV</a>
@@ -65,25 +65,28 @@
             </div>
         </section>
 
-        <!-- Contact me -->
-        <section class="contact-section">
-            <h2 class="contact-head">Let's have a conversation</h2>
+       <!-- Contact-Section -->
+
+        <section id="contact-me" class="contact-section">
+            <h2 class="conv-header">Let's have a conversation</h2>
             <p>Do you need a website, or you just want to say HI? Let's talk</p>
-            <div class="name_and_mail">
-                <div class="name-input">
-                    <label for="name">Your Name</label>
-                <input name="name" placeholder="Enter your name" type="text">
+            <form>
+                <div class="name_and_mail">
+                    <div class="name-input">
+                        <label for="name">Your Name</label>
+                    <input id="name" name="name" placeholder="Enter your name" type="text">
+                    </div>
+                    <div class="email-input">
+                        <label for="email">Your Email</label>
+                    <input id="email_id" name="email" placeholder="Enter your email address" type="email">
+                    </div>
                 </div>
-                <div class="email-input">
-                    <label for="email">Your Email</label>
-                <input name="email" placeholder="Enter your email address" type="email">
+                <div class="message-area">
+                    <label for="message">Your Message</label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Hi, we need a website for our company. How soon can you build one for us?"></textarea>
                 </div>
-            </div>
-            <div class="message-area">
-                <label for="message">Your Message</label>
-            <textarea name="message" id="" cols="30" rows="10" placeholder="Hi, we need a website for our company. How soon can you build one for us?"></textarea>
-            </div>
-            <a class="btn card-btn top" href="#">Send Message</a>
+                <button type="button" onclick="sendEmail()" class="contact-submit">Send Message</button>
+            </form>
         </section>
 
         <footer>
@@ -120,6 +123,14 @@
         <!-- <div class="chat">
             <a href="#"><i class="fa-solid fa-comment"></i></a>
         </div> -->
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("ohx7-zk6fVr8dzry3");
+    })();
+    </script>
         <script src="about.js"></script>
     </body>
     </html>
