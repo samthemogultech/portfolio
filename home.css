@@ -277,6 +277,7 @@ button.contact-submit {
 }
 .skills-and-lang {
     position: relative;
+    width: 70%;
     background: var(--background-dark);
     padding: 70px;
 }
