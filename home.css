@@ -488,7 +488,7 @@ footer .footer-navs {
 }
 
 /* ScrollBar */
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
     width: 15px;
 }
 ::-webkit-scrollbar-track {
@@ -497,7 +497,7 @@ footer .footer-navs {
 ::-webkit-scrollbar-thumb {
     background: var(--dark-ash);
     border-radius: 10px;
-} */
+}
 
 
 
